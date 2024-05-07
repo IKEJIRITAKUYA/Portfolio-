@@ -1,0 +1,759 @@
+
+body {
+    font-family: "Montserrat","Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
+    font-size: 15px;
+    letter-spacing: .05em;
+    color: #333;
+  }
+  
+  a {
+    transition: opacity .3s;
+    text-decoration: none;
+    color: #1ca9e3;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+    border-style: none;
+  }
+  
+  
+  
+  .pc-only {
+    display: block;
+  }
+  
+  .sp-only {
+    display: none;
+  }
+  
+  /*--------------------------------
+   レイアウト
+  ---------------------------------*/
+  .wrapper {
+    padding-top: 73px;
+  }
+  
+  .section {
+    padding: 90px 0;
+  }
+  
+  .section:nth-of-type(odd) {
+    background-color: #f7f7f7;
+  }
+  
+  .container {
+    max-width: 1340px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  
+  /*--------------------------------
+   見出し
+  ---------------------------------*/
+  .title {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 50px;
+    text-align: center;
+    letter-spacing: .05em;
+    color: #333;
+  }
+  
+  .lead {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+  }
+  
+  /*--------------------------------
+  ヘッダー
+  ---------------------------------*/
+  .header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 5px 10px -6px rgba(0,0,0,.1);
+    background-color: #898989;
+    background-color: #D5D5D5;
+    background-color: #F6F6F6;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(240)'%3E%3Cstop offset='0' stop-color='%23F6F6F6'/%3E%3Cstop offset='1' stop-color='%23F6F6F6'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='540' height='450' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.1'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;;
+  }
+  
+  .header-logo {
+    width: 60px;
+  }
+  
+  .header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 40px;
+  }
+  
+  .header-logo {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-right: 20px;
+    letter-spacing: .05em;
+  }
+  
+  .header-logo a {
+    color: #333;
+  }
+  
+  .gnav-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+  
+  .gnav-item:not(:last-child) {
+    margin-right: 20px;
+  }
+  
+  .gnav-item a {
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px 0;
+    transition: .3s;
+    letter-spacing: 2px;
+    color: #000;
+  }
+  .gnav-item a:after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    content: "";
+    transition: .3s;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: #333;
+  }
+  
+  .gnav-item a:hover:after {
+    width: 100%;
+  }
+  
+  /*--------------------------------
+   メインビジュアル
+  ---------------------------------*/
+  .mv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    text-align: center;
+    background-image: url(http://portfolio.local/wp-content/uploads/2020/10/calligraphy-artist-hero-section-bg.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='564' height='564' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='88' y1='88' x2='0' y2='0'%3E%3Cstop offset='0' stop-color='%23005ead'/%3E%3Cstop offset='1' stop-color='%230095ea'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='75' y1='76' x2='168' y2='160'%3E%3Cstop offset='0' stop-color='%23868686'/%3E%3Cstop offset='0.09' stop-color='%23ababab'/%3E%3Cstop offset='0.18' stop-color='%23c4c4c4'/%3E%3Cstop offset='0.31' stop-color='%23d7d7d7'/%3E%3Cstop offset='0.44' stop-color='%23e5e5e5'/%3E%3Cstop offset='0.59' stop-color='%23f1f1f1'/%3E%3Cstop offset='0.75' stop-color='%23f9f9f9'/%3E%3Cstop offset='1' stop-color='%23FFFFFF'/%3E%3C/linearGradient%3E%3Cfilter id='c' x='0' y='0' width='200%25' height='200%25'%3E%3CfeGaussianBlur in='SourceGraphic' stdDeviation='12' /%3E%3C/filter%3E%3C/defs%3E%3Cpolygon fill='url(%23a)' points='0 174 0 0 174 0'/%3E%3Cpath fill='%23000' fill-opacity='0.54' filter='url(%23c)' d='M121.8 174C59.2 153.1 0 174 0 174s63.5-73.8 87-94c24.4-20.9 87-80 87-80S107.9 104.4 121.8 174z'/%3E%3Cpath fill='url(%23b)' d='M142.7 142.7C59.2 142.7 0 174 0 174s42-66.3 74.9-99.3S174 0 174 0S142.7 62.6 142.7 142.7z'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
+  
+  .mv-container {
+    position: relative;
+    padding: 0 20px;
+  }
+  
+  .mv-container {
+    font-family: "Georgia", Sans-serif;
+    font-style: oblique;
+    letter-spacing: 1.7px;
+  }
+  
+  .mv-container h1 {
+    font-size: 100px;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    height: auto;
+  
+    animation-name: enterfromtheleft;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+  
+  @keyframes enterfromtheleft {
+    0%{
+      opacity: 0;
+      transform:translateX(-250px) ;
+    }
+    100%{
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .mv-container h2 {
+    font-size: 80px;
+    margin-bottom: 200px;
+  
+    animation-name: enterfromtheright;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+  
+  @keyframes enterfromtheright {
+    0%{
+      opacity: 0;
+      transform:translateX(250px) ;
+    }
+    100%{
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /*--------------------------------
+   Works
+  ---------------------------------*/
+  .works-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -40px;
+  }
+  
+  .works-item {
+    width: 31.74603%;
+    margin-right: 1.58730%;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .works-item:hover {
+    opacity: .9;
+  }
+  
+  .works-item:nth-of-type(3n) {
+    margin-right: 0;
+  }
+  
+  .works-img img {
+    border: 1px solid #e6e6e6;
+    font-size: 100px;
+    margin-bottom: 15px;
+  }
+  
+  .works-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 8px;
+  }
+  
+  .works-info {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  /*--------------------------------
+   sevice
+  ---------------------------------*/
+  .sevice-list {
+    display: flex;
+    margin: 30px;
+  }
+  
+  .sevice-item {
+    object-fit: cover;
+    margin: auto;
+    display: block;
+  }
+  
+  
+  
+  .sevice-img {
+    width: 100px;
+    margin: auto;
+    display: block;
+  
+  }
+  
+  .sevice-name {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .sevice-text-p {
+    text-align: center;
+    color: #a5a5a5;
+    margin-bottom: 45px;
+  }
+  
+  .sevice-info {
+    margin-top: 30px;
+    line-height: 2.0;
+    max-width: 300px;
+    color: #333;
+  }
+  
+  /*--------------------------------
+   Skill
+  ---------------------------------*/
+  .skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: -50px;
+  }
+  
+  .skill-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 48%;
+    margin-bottom: 50px;
+  }
+  
+  .skill-img {
+    width: 60px;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .skill-body {
+    flex: 1;
+  }
+  
+  .skill-name {
+    margin-bottom: 10px;
+  }
+  
+  .skill-text {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  
+  /*--------------------------------
+   About
+  ---------------------------------*/
+  .profile {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+    
+  }
+  
+  .photograph {
+    width: 1050px;
+    height: 600px;
+    object-fit: cover;
+    margin: auto;
+    display: block;
+  
+  }
+  
+  .profile-body {
+    flex: 1;
+  }
+  
+  .profile-body h2 {
+    font-family: STIXGeneral-BoldItalic	;
+    font-size: 50px;
+    line-height: 1.8;
+  }
+  
+  .profile-body h3 {
+    margin-top: 20px;
+    font-size: 30px;
+    line-height:50px;
+    text-align: center;
+    
+  }
+  
+  .profile-body p {
+    margin-top: 30px;
+    font-size: 16px;
+    line-height:35px;
+  }
+  
+  
+  /*--------------------------------
+   Contact
+  ---------------------------------*/
+  
+  .form_table {
+    border-collapse: collapse;
+    margin: auto;
+    max-width: 700px;
+    width: 100%;
+  }
+  .form_table tr {
+    border-bottom: solid 1px #c9caca;
+  }
+  .form_table th {
+    width: 250px;
+    font-size: 16px;
+  }
+  .form_table th p {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    white-space: nowrap;
+  }
+  .form_table th p, .form_table td {
+    font-size: 16px;
+    min-height: 70px;
+    padding: 20px;
+  }
+  .form_table td {
+    white-space: break-spaces;
+    width: calc(100% - 250px);
+  }
+  .form_table input[type="text"], .form_table textarea, .form_table select, .form_table input[type="email"] {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+    line-height: normal;
+    height: 30px;
+    border: 1px solid #c9caca;
+    background: #fff;
+    position: relative;
+  }
+  .form_table input[type="text"], .form_table textarea, .form_table input[type="email"] {
+    padding: 10px;
+    max-width: 400px;
+    width: 100%;
+  }
+  .form_table textarea {
+    height: 250px;
+  }
+  .form_table input[type="radio"] {
+    margin: 0 0 2px 0;
+  }
+  .form_table .must {
+    background: #a00000;
+    color: #fff;
+    font-size: 14px;
+    margin-left: 10px;
+    padding: 0 5px;
+    height: 18px;
+    line-height: 18px;
+  }
+  .confirm {
+    margin-top: 50px;
+  }
+  
+  .first_confirm button:hover, .confirm button:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
+  
+  .first_confirm button {
+    padding: 18px;
+    margin: 100px auto 0;
+    max-width: 300px;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    display: block;
+    margin-top: 60px;
+    position: relative;
+    transition: 0.3s;
+    font-size: 16px;
+  }
+  .confirm button {
+    background: #000;
+    color: #fff;
+    display: block;
+    position: relative;
+    transition: 0.3s;
+    font-size: 16px;
+    margin: auto;
+    width: 150px;
+    height: 40px;
+    
+  }
+  
+  
+  /*--------------------------------
+   ページトップ
+  ---------------------------------*/
+  .page-top {
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #4c4c4c;
+  }
+  
+  .page-top .material-icons-outlined {
+    vertical-align: bottom;
+    color: #fff;
+  }
+  
+  /*--------------------------------
+   フッター
+  ---------------------------------*/
+  .footer {
+    padding: 30px;
+    background-color: #333;
+  }
+  
+  .copyright {
+    font-size: 10px;
+    text-align: center;
+    color: #797979;
+  }
+  
+  /*--------------------------------
+   下層：Worksページ
+  ---------------------------------*/
+  .article {
+    padding: 80px 0;
+  }
+  
+  .article-container {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .article-title {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .article-body {
+    max-width: 720px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+  
+  .article-body h3 {
+    position: relative;
+    font-size: 18px;
+    margin-bottom: 5px;
+    padding-left: 1em;
+  }
+  
+  .article-body img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .article-body h3:not(:first-child) {
+    margin-top: 50px;
+  }
+  
+  .article-body h3::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    content: "";
+    border-radius: 3px;
+    background-color: #333;
+  }
+  
+  .article-body p {
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+  }
+  
+  .home-link {
+    text-align: center;
+  }
+  
+  /*media Queries 767
+  ----------------------------------------------------*/
+  @media screen and (max-width: 767px) {
+    body {
+      font-size: 14px;
+    }
+  
+    .pc-only {
+      display: none;
+    }
+  
+    .sp-only {
+      display: block;
+    }
+  
+    /* 見出し */
+    .title {
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+  
+    .lead {
+      font-size: 14px;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+  
+    /* レイアウト */
+    .wrapper {
+      padding-top: 57px;
+    }
+  
+    .section {
+      padding: 60px 0;
+    }
+  
+    .container {
+      padding: 0 20px;
+    }
+  
+    /* ヘッダー */
+    .header .container {
+      padding: 15px;
+    }
+  
+    .header-logo {
+      font-size: 15px;
+      margin-right: 15px;
+    }
+  
+    .gnav-item:not(:last-child) {
+      margin-right: 10px;
+    }
+  
+    .gnav-item a {
+      font-size: 10px;
+    }
+  
+    .gnav-item a:after {
+      display: none;
+    }
+  
+    /*  メインビジュアル */
+    .mv {
+      height: 40vh;
+    }
+  
+    .mv-container {
+      padding: 0 20px;
+    }
+  
+    .mv-title {
+      font-size: 30px;
+    }
+    .mv-subtitle {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+  
+    .mv-text {
+      top: 75%;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+  
+    /* Works */
+    .works-name {
+      font-size: 12px;
+    }
+  
+    .works-info {
+      margin-top: 3px;
+    }
+  
+    .works-list {
+      justify-content: space-between;
+    }
+  
+    .works-item {
+      flex: 0 0 48%;
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+  
+    /* Skill */
+    .skill-list {
+      display: block;
+      margin-bottom: 0;
+    }
+  
+    .skill-item {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  
+    .skill-item:last-child {
+      margin-bottom: 0;
+    }
+  
+    .skill-name {
+      margin-bottom: 5px;
+    }
+  
+    .skill-text {
+      font-size: 13px;
+      line-height: 1.7;
+    }
+  
+    /* About */
+    .profile {
+      display: block;
+    }
+    .profile-img {
+      width: 150px;
+      margin: 0 auto;
+      margin-bottom: 25px;
+    }
+  
+    .profile-body p {
+      font-size: 14px;
+      line-height: 1.7;
+    }
+  
+    .profile-body p:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  
+    /* フッター */
+    .footer {
+      padding: 20px;
+    }
+  
+    /* 下層ページ */
+    .article {
+      padding: 50px 0;
+    }
+  
+    .article-body h3 {
+      font-size: 16px;
+      padding-left: .8em;
+    }
+  
+    .article-body h3:not(:first-child) {
+      margin-top: 30px;
+    }
+  
+    .article-body p {
+      font-size: 14px;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+  }
+  
